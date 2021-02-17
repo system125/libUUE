@@ -6,17 +6,17 @@
 #ifndef controlSurface_h
 #define controlSurface_h
 
-# include <servo.h>
+# include <Servo.h>
 
 const unsigned int cs_min,cs_Max;
 
-class controlSurface: public servo
+class controlSurface: public Servo
 {
 /*
  * Works directly with arduino pins
  * takes in pin no and instantiates servo object
  */
-    int pin;
+//    int pin;
     public:
         controlSurface (int pin);
         void turn (float angle); //takes angles in degree and rotates said servo mechanism
