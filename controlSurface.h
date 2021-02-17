@@ -8,7 +8,7 @@
 
 # include <Servo.h>
 
-const unsigned int cs_min,cs_Max;
+//const unsigned int cs_min,cs_Max;
 
 class controlSurface: public Servo
 {
@@ -17,6 +17,7 @@ class controlSurface: public Servo
  * takes in pin no and instantiates servo object
  */
 //    int pin;
+    static const int cs_Min{544},cs_Max{2400};
     public:
         controlSurface (int pin);
         void turn (float angle); //takes angles in degree and rotates said servo mechanism
