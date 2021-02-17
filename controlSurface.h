@@ -12,10 +12,14 @@ const unsigned int cs_min,cs_Max;
 
 class controlSurface: public servo
 {
+/*
+ * Works directly with arduino pins
+ * takes in pin no and instantiates servo object
+ */
     int pin;
     public:
         controlSurface (int pin);
-        void turn (float angle);
+        void turn (float angle); //takes angles in degree and rotates said servo mechanism
 };
 
 # endif
